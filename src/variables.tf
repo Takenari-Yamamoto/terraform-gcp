@@ -1,6 +1,7 @@
 variable "project_id" {
-  description = "sample-pro-395702"
+  description = "project id"
   type        = string
+  default     = "sample-pro-395702"
 }
 
 variable "default_region" {

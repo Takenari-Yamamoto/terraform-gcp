@@ -33,3 +33,7 @@ assign-role:
 create-key:
 	gcloud iam service-accounts keys create .credentials/key.json \
 		--iam-account tf-account@${PROJECT_ID}.iam.gserviceaccount.com
+
+# cloud run を有効にする
+enable-cloud-run:
+	gcloud services enable run.googleapis.com --project=${PROJECT_ID}
