@@ -37,3 +37,8 @@ create-key:
 # cloud run を有効にする
 enable-cloud-run:
 	gcloud services enable run.googleapis.com --project=${PROJECT_ID}
+
+# Cloud Registry
+show-registry:
+	gcloud container images list --repository=asia.gcr.io/${PROJECT_ID}
+
